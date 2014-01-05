@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>A DustJS Demo</title>
+    <script type="text/javascript" src="dust-full.min.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+    <script type='text/javascript'>
+        var compiledTemplateKey = "demo";
+
+        dust.render(compiledTemplateKey, {name: "Fred"}, function(err, out) {
+            console.log(out);
+            document.write(out);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
